@@ -1,0 +1,427 @@
+{
+  "id": "335502b7-35f8-4045-b463-7372543468cc",
+  "version": "2.0",
+  "name": "图书详情功能测试",
+  "url": "http://localhost:8080/user-home.jsp",
+  "tests": [{
+    "id": "43eb0dea-ba0d-4e4a-b634-3efa7135f6c8",
+    "name": "test1",
+    "commands": [{
+      "id": "f2d7239d-a093-4859-ae32-34624ff84952",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/user-home.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "17331bdc-0d06-4dc9-bb8b-071328f4e446",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1721x1033",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3aa7eddc-4ad4-4a01-82aa-75e155090277",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=红楼梦",
+      "targets": [
+        ["linkText=红楼梦", "linkText"],
+        ["css=tr:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'红楼梦')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'user-book-info.jsp?bookid=3')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'红楼梦')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a8e9d25-6928-4914-960c-85b0efe9f65c",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'图书详情')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "360b4b94-3a36-4e5f-be31-c12f86099c86",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1:nth-child(4)",
+      "targets": [
+        ["css=h1:nth-child(4)", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'图书详情')]", "xpath:innerText"]
+      ],
+      "value": "图书详情"
+    }, {
+      "id": "cb70e5cc-fb27-49a4-955a-510bed883a97",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'红楼梦')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "758893e2-21e3-4b1f-ae70-3180b048cfd1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=tr:nth-child(2) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'红楼梦')]", "xpath:innerText"]
+      ],
+      "value": "红楼梦"
+    }]
+  }, {
+    "id": "4ec81916-2469-4c1d-a74c-c28fb9b4e0c9",
+    "name": "test2",
+    "commands": [{
+      "id": "775eb5e6-4311-4ac2-8bf9-3c3a57ee130f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/user-home.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "807c8aa5-8601-4df2-9487-62b1e06c095f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1721x1033",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0f9a810-f9ef-4886-819a-c01b25c2f0c6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=红楼梦",
+      "targets": [
+        ["linkText=红楼梦", "linkText"],
+        ["css=tr:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'红楼梦')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'user-book-info.jsp?bookid=3')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'红楼梦')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b626806-2888-42b0-8b69-9a84cea43443",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=加入书架",
+      "targets": [
+        ["linkText=加入书架", "linkText"],
+        ["css=div:nth-child(8) > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'加入书架')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'user-bookshelf-add.jsp?bookid=3')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'加入书架')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0682d240-2d29-4ae1-b03b-b6069bed78b3",
+    "name": "test3",
+    "commands": [{
+      "id": "c92ed7bc-e0fc-4a9a-b3aa-03d8e64ac3cc",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/user-home.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "305bf333-5077-4b80-aabb-8bd000952175",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad0e4682-6356-4dc9-988d-1ff928352879",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=红楼梦",
+      "targets": [
+        ["linkText=红楼梦", "linkText"],
+        ["css=tr:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'红楼梦')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'user-book-info.jsp?bookid=3')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'红楼梦')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab02e368-ae04-41dd-8b3c-a3ad2869ae5c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=图书列表",
+      "targets": [
+        ["linkText=图书列表", "linkText"],
+        ["css=div > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'图书列表')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'userBookList')])[2]", "xpath:href"],
+        ["xpath=//div[3]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'图书列表')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b11fc0a4-5bb4-42ff-af25-f0b39fa45cb3",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'图书列表')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55cd0922-0ed3-4653-ac5e-5bf30c754f6c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'图书列表')]", "xpath:innerText"]
+      ],
+      "value": "图书列表"
+    }]
+  }, {
+    "id": "06eda1fd-3a38-48a9-8206-1fcfc0cab937",
+    "name": "test4",
+    "commands": [{
+      "id": "aca830a3-41d1-4294-8023-fa804fed85e7",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/user-home.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b412f928-3778-4bd0-9fdd-4eda27bf1a33",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02adb429-8fcd-47a1-8ec0-16965c3d0b5d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=红楼梦",
+      "targets": [
+        ["linkText=红楼梦", "linkText"],
+        ["css=tr:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'红楼梦')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'user-book-info.jsp?bookid=3')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'红楼梦')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f9cc80b-12c5-4ff7-908d-0fa1cb1f0cca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=返回上一级",
+      "targets": [
+        ["linkText=返回上一级", "linkText"],
+        ["css=#before > a", "css:finder"],
+        ["xpath=//a[contains(text(),'返回上一级')]", "xpath:link"],
+        ["xpath=//div[@id='before']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'user-home.jsp')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'返回上一级')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fac1de9-9519-47a2-ab96-5aa9ad1bb6a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'图书列表')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64a5c3f3-5a23-4666-ae8a-c51b3df7feac",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'图书列表')]", "xpath:innerText"]
+      ],
+      "value": "图书列表"
+    }]
+  }, {
+    "id": "b8925938-1e3d-44b4-8dac-f6e0d679b59c",
+    "name": "test5",
+    "commands": [{
+      "id": "77ceb878-5a62-485c-aee3-1dd7f0090a85",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/user-home.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cf3d2ba-46c7-435f-a9ea-646b06e0fb20",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0f42fa78-4f65-44b1-8792-728c28717129",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=红楼梦",
+      "targets": [
+        ["linkText=红楼梦", "linkText"],
+        ["css=tr:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'红楼梦')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'user-book-info.jsp?bookid=3')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'红楼梦')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0619d94-eb8e-4df7-85df-eeec20dd14a4",
+      "comment": "",
+      "command": "click",
+      "target": "name=content",
+      "targets": [
+        ["name=content", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='content']", "xpath:attributes"],
+        ["xpath=//form[@id='content']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0d623c9-1276-4891-bfb9-e9b152cfb39f",
+      "comment": "",
+      "command": "type",
+      "target": "name=content",
+      "targets": [
+        ["name=content", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='content']", "xpath:attributes"],
+        ["xpath=//form[@id='content']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "很好看"
+    }, {
+      "id": "21c042ed-476b-4e5b-8cb3-ee04bc4d88f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='content']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'添加')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "28e4a0dd-5945-4106-ace9-2bd27fe02f15",
+    "name": "test6",
+    "commands": [{
+      "id": "c2833f0a-6d1a-4e01-afab-5e87a56f3b76",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/user-home.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c6e7f58-b523-45a0-b5da-9a3ea91106c7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1721x1033",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fdc915ec-7b97-45b5-acc5-5aeeec112b79",
+      "comment": "",
+      "command": "click",
+      "target": "name=bookname",
+      "targets": [
+        ["name=bookname", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='bookname']", "xpath:attributes"],
+        ["xpath=//div[@id='before']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "677c435b-a879-4d91-9f90-95959c7c597f",
+      "comment": "",
+      "command": "type",
+      "target": "name=bookname",
+      "targets": [
+        ["name=bookname", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='bookname']", "xpath:attributes"],
+        ["xpath=//div[@id='before']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "红楼梦"
+    }, {
+      "id": "b815b574-b984-4f99-8512-556ac14fdb1c",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='查询']", "xpath:attributes"],
+        ["xpath=//div[@id='before']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "961f1bb4-0703-4797-b370-1e9e9d570265",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(2)", "css:finder"],
+        ["xpath=//tr[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0067015e-edd7-4d4a-8f00-eeb963e15c08",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=红楼梦",
+      "targets": [
+        ["linkText=红楼梦", "linkText"],
+        ["css=td:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'红楼梦')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'user-book-info.jsp?bookid=3')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'红楼梦')]", "xpath:innerText"]
+      ],
+      "value": "红楼梦"
+    }]
+  }],
+  "suites": [{
+    "id": "8c989308-4397-4a6b-86f6-74f234e3a647",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["43eb0dea-ba0d-4e4a-b634-3efa7135f6c8"]
+  }],
+  "urls": ["http://localhost:8080/user-home.jsp"],
+  "plugins": []
+}

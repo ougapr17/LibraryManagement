@@ -1,0 +1,72 @@
+{
+  "id": "92c92bfa-9ee8-4ff4-84a0-39fbc77985d7",
+  "version": "2.0",
+  "name": "借阅记录管理功能测试—用户",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "6eedc08f-ab7d-4c79-b8b2-c87e236e0548",
+    "name": "test1",
+    "commands": [{
+      "id": "e6e08cf0-9829-4a0c-9a07-d258bf430991",
+      "comment": "",
+      "command": "open",
+      "target": "/userBookList",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f35a46b3-a143-47a4-b91e-6b75f234cc60",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1721x1033",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d520140-86b1-4c1c-83a3-e44136caa66d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=借阅记录",
+      "targets": [
+        ["linkText=借阅记录", "linkText"],
+        ["css=#logout > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'借阅记录')]", "xpath:link"],
+        ["xpath=//td[@id='logout']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'userRecordList')]", "xpath:href"],
+        ["xpath=//td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'借阅记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "763fb480-e52f-4420-abd5-dfc00c5e61f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'借阅记录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "643f84c4-523f-41ef-977f-243e9e3c8480",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'借阅记录')]", "xpath:innerText"]
+      ],
+      "value": "借阅记录"
+    }]
+  }],
+  "suites": [{
+    "id": "04573600-6d23-40dc-89e8-7658dfa7d0a5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6eedc08f-ab7d-4c79-b8b2-c87e236e0548"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

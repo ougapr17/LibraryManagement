@@ -1,0 +1,177 @@
+{
+  "id": "8d67f44a-c384-46a3-8a22-a0b993f0f386",
+  "version": "2.0",
+  "name": "书架管理功能测试",
+  "url": "http://localhost:8080/userBookList",
+  "tests": [{
+    "id": "0439af48-800e-4b60-aff0-68960e697182",
+    "name": "test1",
+    "commands": [{
+      "id": "0f17c601-ac29-4c6c-8624-c37dc0ae6be6",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/userBookList",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab816ee8-01f3-4a30-9a2c-3d8aaa2db2c8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1721x1033",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "29c62f48-a8fe-446c-94ec-5f500f3287ca",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=我的书架",
+      "targets": [
+        ["linkText=我的书架", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'我的书架')]", "xpath:link"],
+        ["xpath=//td[@id='logout']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'bookShelf')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'我的书架')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ed5bb34-b6e5-44f0-a724-dc439b5b5a89",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15269252-b13c-4f66-8bcb-83d2abd80978",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99fb5eeb-928c-4e46-af83-24e5942ba6ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'书架列表')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01d83247-9d7b-46b5-a93d-b580e926b968",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'书架列表')]", "xpath:innerText"]
+      ],
+      "value": "书架列表"
+    }]
+  }, {
+    "id": "9d7423ce-fd39-41e9-a108-98420339115e",
+    "name": "test2",
+    "commands": [{
+      "id": "75b6817a-4fbb-4908-870e-d8046724bd21",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/userBookList",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "26a6e2d2-16d7-474c-9bab-634feb01efc3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1721x1033",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9ad89e18-4ff9-4508-a09c-d2f16f887c95",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=我的书架",
+      "targets": [
+        ["linkText=我的书架", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'我的书架')]", "xpath:link"],
+        ["xpath=//td[@id='logout']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'bookShelf')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'我的书架')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f90c327-2d39-4390-8cbe-de0e2b13ba37",
+      "comment": "",
+      "command": "click",
+      "target": "name=bookname",
+      "targets": [
+        ["name=bookname", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='bookname']", "xpath:attributes"],
+        ["xpath=//div[@id='before']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7382335e-4e40-4851-8469-402eb5324c5d",
+      "comment": "",
+      "command": "type",
+      "target": "name=bookname",
+      "targets": [
+        ["name=bookname", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='bookname']", "xpath:attributes"],
+        ["xpath=//div[@id='before']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "红楼梦"
+    }, {
+      "id": "b8acf9bf-547b-4eb3-9b20-11ac6fc626ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='查询']", "xpath:attributes"],
+        ["xpath=//div[@id='before']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1ff3965-84b3-4ad6-bacc-45002195f722",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=红楼梦",
+      "targets": [
+        ["linkText=红楼梦", "linkText"],
+        ["css=td:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'红楼梦')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'user-book-info.jsp?bookid=3')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'红楼梦')]", "xpath:innerText"]
+      ],
+      "value": "红楼梦"
+    }]
+  }],
+  "suites": [{
+    "id": "168c3a5d-589f-494f-bdb1-b328eb05d388",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0439af48-800e-4b60-aff0-68960e697182"]
+  }],
+  "urls": ["http://localhost:8080/userBookList"],
+  "plugins": []
+}

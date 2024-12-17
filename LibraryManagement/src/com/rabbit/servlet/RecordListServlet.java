@@ -1,0 +1,42 @@
+package com.rabbit.servlet;
+
+import com.rabbit.dao.UserDao;
+import com.rabbit.dao.impl.UserDaoImpl;
+import com.rabbit.po.Record;
+import com.rabbit.po.User;
+import com.rabbit.service.RecordService;
+import com.rabbit.service.impl.RecordServiceImpl;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.IOException;
+import java.util.List;
+
+/**
+ * @author
+ * @date  23:07
+ */
+@WebServlet("/recordList")
+public class RecordListServlet extends HttpServlet {
+
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        doPost(request, response);
+    }
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // 获取userid
+        HttpSession session = request.getSession();
+        User user =(User)session.getAttribute("user");
+        Integer userid = user.getUserid();
+
+        // 获取该用户的书单
+        RecordService recordService = new RecordServiceImpl();
+        List<Record> list = recordService.selectRecords();
+        request.setAttribute("list", list);
+        request.getRequestDispatcher("admin-record.jsp").forward(request, response);
+    }
+}

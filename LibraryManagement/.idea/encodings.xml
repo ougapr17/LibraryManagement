@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/src/com/rabbit/filter/LoginFilter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/web/lib/mysql-connector-java-5.1.7-bin.jar" charset="GBK" />
+  </component>
+</project>

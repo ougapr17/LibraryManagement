@@ -1,0 +1,284 @@
+{
+  "id": "dd745259-6050-4728-87c5-77aaf52c9f4a",
+  "version": "2.0",
+  "name": "找回密码功能测试",
+  "url": "http://localhost:8080/search-password.jsp",
+  "tests": [{
+    "id": "eecbd2b5-783e-4e18-a1d0-07145b97c288",
+    "name": "test1",
+    "commands": [{
+      "id": "10c1fd9d-0bf8-4f15-81fc-774b9fa7f8ea",
+      "comment": "",
+      "command": "open",
+      "target": "/search-password.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f379d39d-1d1b-4511-8fcf-4c5d093c3519",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x698",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b376f5f0-5f7f-4628-8372-bed39b2bf744",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcb7d737-021c-4aed-8b23-a7a3283a3ba1",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "8d087d58-72d5-46f4-986f-a251b55004a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='searchPassword']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e5ddbb0-f224-44a7-a3f7-372ec9c2f496",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) input:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(2) input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='提交']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eabbd8c5-fc55-4323-a40e-d3dc299db9f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea78a304-16cc-4275-8dbb-67939a84a207",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=返回登录",
+      "targets": [
+        ["linkText=返回登录", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(text(),'返回登录')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'login.jsp')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'返回登录')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "3265bf8d-6d54-461d-ae7d-eb6eb627ea27",
+    "name": "test2",
+    "commands": [{
+      "id": "6bf35dfb-cd57-4f78-80fa-35c86ff8ff6d",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/search-password.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aea357f6-39d7-4989-8b54-2b0d40861a07",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x698",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd004c0d-2e5e-41f6-a958-f49588e2f482",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) input:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(2) input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='提交']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ed69b6e-74b7-47c5-918a-c84a880c6731",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='searchPassword']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7b35f6f-a27c-4b14-9656-ab2a96a8d92c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=div:nth-child(5)",
+      "targets": [
+        ["css=div:nth-child(5)", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"],
+        ["xpath=//div[contains(.,'请输入正确的用户名')]", "xpath:innerText"]
+      ],
+      "value": "请输入正确的用户名"
+    }]
+  }, {
+    "id": "5cf621e5-6e2c-4bf7-8b05-dcce6237549d",
+    "name": "test3",
+    "commands": [{
+      "id": "65305278-84e5-45b1-8392-ff51edeb7d16",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/search-password.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4643c690-b0d2-45f7-9185-93cc9eebe168",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x698",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4da6ec5a-9c75-4ad0-bd47-01f7364a4082",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8d0c738-84d4-4c40-a097-7b904cea7ba6",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "gghhh"
+    }, {
+      "id": "a828ef2f-6189-463d-b8a0-398fdbc54e50",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) input:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(2) input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='提交']", "xpath:attributes"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0b3c209-1c94-4433-a790-f78d5df776da",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(5)",
+      "targets": [
+        ["css=div:nth-child(5)", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"],
+        ["xpath=//div[contains(.,'请输入正确的用户名')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4df4295-093e-43a1-95d8-90809e666d6c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=div:nth-child(5)",
+      "targets": [
+        ["css=div:nth-child(5)", "css:finder"],
+        ["xpath=//div[2]", "xpath:position"],
+        ["xpath=//div[contains(.,'请输入正确的用户名')]", "xpath:innerText"]
+      ],
+      "value": "请输入正确的用户名"
+    }]
+  }, {
+    "id": "d08267bb-78b2-4588-a163-48dfdc6e13e1",
+    "name": "test4",
+    "commands": [{
+      "id": "63eae7c9-c348-4542-9839-ecfdd6f97b50",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/search-password.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbdb1d4c-3ec1-4eb6-b58b-e672ea8ee380",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x698",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f982cda-e8d3-4105-9b83-a799672f32c7",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a962e35a-a38a-4b5d-9c83-134779a4fd20",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=tr:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "b3fb94e6-be1a-47fd-b168-c97a13e380e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='重置']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d54ab2c2-aab5-4dfb-8eb3-d371a432fce6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["eecbd2b5-783e-4e18-a1d0-07145b97c288"]
+  }],
+  "urls": ["http://localhost:8080/", "http://localhost:8080/search-password.jsp"],
+  "plugins": []
+}
